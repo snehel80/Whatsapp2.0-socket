@@ -1,8 +1,8 @@
 import { Server } from 'socket.io';
 
-const io = new Server(9000, {
+const io = new Server(process.env.PORT || 9000, {
     cors: {
-        origin: 'http://localhost:3000',
+        origin: 'https://whatsapp2-0-frontned-qoo6njzhg-snehel80.vercel.app/',
     }, 
 })
 
